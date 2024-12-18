@@ -4,6 +4,7 @@ const Experience: React.FC = () => {
         <h1 className="flex items-start justify-start text-3xl font-bold text-black">#MyExperience?</h1>
         <p className="mt-4 text-lg text-black">
         This is the profileon where you can view my personal information and skills.
+        This is the profile on where you can view my personal information and skills.
         </p>
     </div>
     )
