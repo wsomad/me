@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 interface Repo {
     id: number;
@@ -11,7 +11,7 @@ interface Repo {
 }
 
 const Repos: React.FC = () => {
-    const [repos, setRepos] = useState<Repo[]>([
+    const [repos] = useState<Repo[]>([
         // {id: 1, name: 'Project 1', html_url: "URL project 1", description: "Project 1", language: "Java"},
         // {id: 2, name: 'Project 2', html_url: "URL project 2", description: "Project 2", language: "Java"}
     ]);

@@ -1,9 +1,7 @@
 import React from 'react';
-import Index from './index/page';
+import Index from './first/page';
 import About from './about/page';
 import Project from './project/page';
-import Header from '@/components/header/header';
-import Education from './education/page';
 import Experience from './experience/page';
 
 const HomePage: React.FC = () => {

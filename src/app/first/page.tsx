@@ -4,9 +4,9 @@ import React, { useState, useEffect } from 'react';
 
 const IndexPage: React.FC = () => {
     const [displayedText, setDisplayedText] = useState('');
-    const [displayedSubText, setDisplayedSubText] = useState('');
+    //const [displayedSubText, setDisplayedSubText] = useState('');
     const fullText = `System.out.println('Hello World!');`;
-    const subText = 'Welcome to my portfolio.';
+    //const subText = 'Welcome to my portfolio.';
 
     useEffect(() => {
         let index = 0;
@@ -21,23 +21,23 @@ const IndexPage: React.FC = () => {
         }, 100);
 
         return () => clearInterval(typingInterval);
-    }, []);
+    }, [fullText]);
 
-    useEffect(() => {
-        let index = 0;
+    // useEffect(() => {
+    //     let index = 0;
 
-        const typingInterval = setInterval(() => {
-            if (index < subText.length) {
-                setDisplayedSubText(subText.slice(0, index + 1));
-                index++
-            }
-            else {
-                clearInterval(typingInterval);
-            }
-        }, 150)
+    //     const typingInterval = setInterval(() => {
+    //         if (index < subText.length) {
+    //             setDisplayedSubText(subText.slice(0, index + 1));
+    //             index++
+    //         }
+    //         else {
+    //             clearInterval(typingInterval);
+    //         }
+    //     }, 150)
         
-        return () => clearInterval(typingInterval);
-    }, []);
+    //     return () => clearInterval(typingInterval);
+    // }, []);
 
   return (
     <div className="max-w-7xl mx-auto w-full flex items-center justify-center px-5 font-courier">
