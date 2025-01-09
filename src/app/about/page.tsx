@@ -10,7 +10,7 @@ const AboutPage: React.FC = () => {
       <div className='flex h-full gap-10 my-10'>
         <div className='flex-1 h-full flex justify-center items-end'>
           <Image
-            src={`basePath/images/mugshot.png`}
+            src={`${basePath}/images/mugshot.png`}
             height={250}
             width={250}
             alt='Who is this guy? I heard he is a good Software Engineer ^_^'
