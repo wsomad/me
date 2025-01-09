@@ -10,7 +10,7 @@ interface CardProps {
 
 const CardComponents: React.FC<CardProps> = ({ name, image, repo_url }) => {
     const basePath = process.env.NODE_ENV === 'production' ? '/me' : '';
-    
+
     return (
         <Card className="w-[350px] h-[300px]">
         <div className="flex justify-center items-center pt-4">
@@ -26,9 +26,8 @@ const CardComponents: React.FC<CardProps> = ({ name, image, repo_url }) => {
             <Image
                 src={`${basePath}/images/available-face.png`} // Default fallback image
                 alt="Default avatar"
-                width={44} // 44px * 4 (h-44, w-44)
-                height={44}
-                className="rounded-full" // Optional: Add some styling
+                width={140} // 44px * 4 (h-44, w-44)
+                height={140}
             />
             )}
         </div>
