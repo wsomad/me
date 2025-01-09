@@ -3,6 +3,7 @@ import Index from './first/page';
 import About from './about/page';
 import Project from './project/page';
 import Experience from './experience/page';
+import Skills from './skills/page';
 
 const HomePage: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const HomePage: React.FC = () => {
       </div>
       <div className='border-b border-gray-300'>
         <div className="max-w-7xl mx-auto border-l border-r border-gray-300">
-          <section className="h-[600px]">
+          <section className="xl:h-96 md:h-screen">
             <About />
           </section>
         </div>
@@ -24,14 +25,14 @@ const HomePage: React.FC = () => {
       <div className='border-b border-gray-300'>
         <div className="max-w-7xl mx-auto border-l border-r border-gray-300 font-courier">
           <section className="h-screen">
-            <Experience />
+            <Project />
           </section>
         </div>
       </div>
-      <div className='border-b border-gray-300'>
+      <div className=''>
         <div className="max-w-7xl mx-auto border-l border-r border-gray-300 font-courier">
           <section className="h-screen">
-            <Project />
+            <Skills/>
           </section>
         </div>
       </div>

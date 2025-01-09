@@ -15,8 +15,7 @@ export default {
         accent: '#9333EA', // Custom accent color
       },
       fontFamily: {
-        sans: ['Lato', 'serif'],
-        courier: ['"Courier Prime"', 'monospace'],
+        sans: ['Poppins', 'Lato', 'sans-serif'],  
       },
     },
   },
