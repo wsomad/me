@@ -12,8 +12,8 @@ const Stack: React.FC = () => {
                 <Image
                     src={stack.imageUrl} // Dynamic image source
                     alt={`${stack.name} logo`} // Accessible description
-                    width={16}
-                    height={16}
+                    width={40}
+                    height={40}
                     className="object-contain" // Tailwind class for fitting
                     priority // Optional: Loads the image eagerly
                 />

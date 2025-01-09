@@ -2,13 +2,15 @@ import React from 'react';
 import Image from "next/image";
 
 const AboutPage: React.FC = () => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/me' : '';
+
   return (
     <div className='px-6 py-10'>
       <h1 className="flex items-start justify-start text-3xl font-semibold text-black">#WhoAmI?</h1>
       <div className='flex h-full gap-10 my-10'>
         <div className='flex-1 h-full flex justify-center items-end'>
           <Image
-            src='./images/mugshot.png'
+            src={`basePath/images/mugshot.png`}
             height={250}
             width={250}
             alt='Who is this guy? I heard he is a good Software Engineer ^_^'

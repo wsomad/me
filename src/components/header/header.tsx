@@ -2,11 +2,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import Image from "next/image";
 
 const Header: React.FC = () => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/me' : '';
+
   return (
     <div className="border-b border-gray-300">
         <header className="max-w-7xl mx-auto flex items-center justify-between space-x-8 py-5 font-courier font-normal border-l border-r border-gray-300 px-6">   
           <Image
-            src="/images/available-face.png" // Local image path
+            src={`${basePath}/images/available-face.png`} // Local image path
             alt="Available face"
             width={25} 
             height={25}
