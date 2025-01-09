@@ -1,4 +1,5 @@
 import {stacks} from '@/types/stack';
+import Image from "next/image";
 
 const Stack: React.FC = () => {
     return (
@@ -8,10 +9,13 @@ const Stack: React.FC = () => {
                 key={index}
                 className="flex flex-col items-center bg-white p-4 hover:shadow-md transition-shadow"
                 >
-                <img
-                    src={stack.imageUrl}
-                    alt={`${stack.name} logo`}
-                    className="h-16 w-16 object-contain"
+                <Image
+                    src={stack.imageUrl} // Dynamic image source
+                    alt={`${stack.name} logo`} // Accessible description
+                    width={16}
+                    height={16}
+                    className="object-contain" // Tailwind class for fitting
+                    priority // Optional: Loads the image eagerly
                 />
                 <p className="mt-4 text-center font-medium">{stack.name}</p>
                 </div>

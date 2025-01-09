@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 const AboutPage: React.FC = () => {
   return (
@@ -6,7 +7,7 @@ const AboutPage: React.FC = () => {
       <h1 className="flex items-start justify-start text-3xl font-semibold text-black">#WhoAmI?</h1>
       <div className='flex h-full gap-10 my-10'>
         <div className='flex-1 h-full flex justify-center items-end'>
-          <img
+          <Image
             src='./images/mugshot.png'
             height={250}
             width={250}

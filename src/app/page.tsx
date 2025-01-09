@@ -2,7 +2,6 @@ import React from 'react';
 import Index from './first/page';
 import About from './about/page';
 import Project from './project/page';
-import Experience from './experience/page';
 import Skills from './skills/page';
 
 const HomePage: React.FC = () => {
