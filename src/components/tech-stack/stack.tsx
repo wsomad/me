@@ -7,15 +7,15 @@ const Stack: React.FC = () => {
             {stacks.map((stack, index) => (
                 <div
                 key={index}
-                className="flex flex-col items-center bg-white p-4 hover:shadow-md transition-shadow"
+                className="flex flex-col items-center bg-white p-4 transition-shadow"
                 >
                 <Image
-                    src={stack.imageUrl} // Dynamic image source
-                    alt={`${stack.name} logo`} // Accessible description
-                    width={48}
-                    height={48}
-                    className="object-contain" // Tailwind class for fitting
-                    priority // Optional: Loads the image eagerly
+                    src={stack.imageUrl} 
+                    alt={`${stack.name} logo`}
+                    width={52}
+                    height={52}
+                    className="object-contain"
+                    priority
                 />
                 <p className="mt-4 text-center font-medium">{stack.name}</p>
                 </div>

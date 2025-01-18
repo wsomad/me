@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import Image from "next/image";
 
 const Header: React.FC = () => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/me' : '';
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   return (
     <div className="border-b border-gray-300">
