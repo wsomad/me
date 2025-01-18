@@ -1,5 +1,5 @@
 import React from 'react';
-import Index from './first/page';
+// import Index from './first/page';
 import About from './about/page';
 import Project from './project/page';
 import Skills from './skills/page';
