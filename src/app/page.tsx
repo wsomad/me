@@ -4,6 +4,8 @@ import About from './about/page';
 import Project from './project/page';
 import Skills from './skills/page';
 import Contact from './contact/page';
+import Experience from './experience/page';
+import Education from './education/page';
 
 const HomePage: React.FC = () => {
   return (
@@ -17,8 +19,22 @@ const HomePage: React.FC = () => {
       </div> */}
       <div className='border-b border-gray-300'>
         <div className="max-w-7xl mx-auto border-l border-r border-gray-300">
-          <section className="min-h-96">
+          <section className="min-h-54">
             <About />
+          </section>
+        </div>
+      </div>
+      <div className='border-b border-gray-300'>
+        <div className="max-w-7xl mx-auto border-l border-r border-gray-300">
+          <section className="min-h-32">
+            <Experience />
+          </section>
+        </div>
+      </div>
+      <div className='border-b border-gray-300'>
+        <div className="max-w-7xl mx-auto border-l border-r border-gray-300">
+          <section className="min-h-32">
+            <Education />
           </section>
         </div>
       </div>

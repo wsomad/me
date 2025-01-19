@@ -17,7 +17,7 @@ const Stack: React.FC = () => {
                     className="object-contain"
                     priority
                 />
-                <p className="mt-4 text-center font-medium">{stack.name}</p>
+                <p className="mt-4 text-center text-md font-medium">{stack.name}</p>
                 </div>
             ))}
             </div>

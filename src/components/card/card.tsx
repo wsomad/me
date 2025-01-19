@@ -11,17 +11,17 @@ const CardComponents: React.FC<CardProps> = ({ name, repo_url }) => {
     const basePath = process.env.NODE_ENV === 'production' ? '/me' : '';
 
     return (
-        <Card className="min-w-[300px] min-h-[300px]">
+        <Card className="min-w-[280px] min-h-[280px]">
             <div className="flex justify-center items-center pt-4"> 
                 <Image
-                    src={`${basePath}/images/available-face.png`} // Default fallback image
+                    src={`${basePath}/images/available-face.png`}
                     alt="Default avatar"
-                    width={132} // 44px * 4 (h-44, w-44)
+                    width={132} 
                     height={132}
                 />
             </div>
-            <div className="pt-8 pb-2 px-6">
-                <CardTitle className="text-lg font-semibold">{name}</CardTitle>
+            <div className="pt-6 pb-2 px-6">
+                <CardTitle className="text-md font-medium">{name}</CardTitle>
             </div>
             <div className="px-6">
                 <Button

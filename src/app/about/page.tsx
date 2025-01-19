@@ -6,7 +6,7 @@ const AboutPage: React.FC = () => {
 
   return (
     <div className='px-6 pt-6 pb-10'>
-      <h1 className="flex items-start justify-start text-3xl font-semibold text-black">#WhoAmI?</h1>
+      <h1 className="flex items-start justify-start text-2xl font-semibold text-black">#Me</h1>
       <div className="flex flex-col lg:flex-row gap-6 md:gap-10">
         <div className="flex-1 flex justify-center items-end">
           <Image
@@ -22,15 +22,15 @@ const AboutPage: React.FC = () => {
           />
         </div>
 
-        <div className="flex-[2] flex flex-col justify-center text-lg text-black text-center lg:text-start">
-          <h2 className="font-semibold text-3xl mb-4 sm:mb-6">
+        <div className="flex-[2] flex flex-col justify-center text-black text-center lg:text-start">
+          <h2 className="font-semibold text-4xl lg:text-5xl mb-4 sm:mb-6">
             Software Engineer
           </h2>
-          <p className='text-lg text-black'>
+          <p className='text-md text-black'>
             Hello World! I&apos;m <span className="font-semibold">Haikal</span>, a Software Engineer.
             I&apos;m currently undergoing my internship as a Technology Intern at Deloitte.
-            And I believe there is still a long journey for me to go through.
-            So, sip a tea and enjoy the life.
+            It&apos;s not an easy road but I believe there is still a long journey for me to go through.
+            So, let&apos;s sip a tea and enjoy the life.
           </p>
         </div>
       </div>

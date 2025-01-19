@@ -28,7 +28,8 @@ const Repos: React.FC = () => {
     });
 
     return (
-        <div className="mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-4 lg:gap-4 sm:justify-center md:justify-center lg:justify-center sm:place-items-center md:place-items-center lg:place-items-center mt-6">
+        <div className="mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-6 
+        sm:justify-center md:justify-center lg:justify-center sm:place-items-center md:place-items-center lg:place-items-center mt-6">
             {renderedRepos}
         </div>
     );

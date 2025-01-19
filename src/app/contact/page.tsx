@@ -2,10 +2,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const ContactPage: React.FC = () => {
     return (
-        <div className="px-6 flex justify-center items-center min-h-32">
+        <div className="px-4 flex justify-center items-center min-h-32">
             <div className="flex flex-col items-center lg:flex-row lg:items-center">
-                <h2 className="text-2xl font-semibold text-black">Feel free to connect with me on</h2>
-                <nav className="flex items-center space-x-4 lg:ml-4">
+                <h2 className="text-xl md:text-2xl font-semibold text-black">Feel free to connect with me on</h2>
+                <nav className="flex items-center space-x-4 mt-2 lg:mt-0 lg:ml-4">
                     <a
                     href="https://github.com/wsomad"
                     target="_blank"
