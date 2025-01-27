@@ -7,8 +7,8 @@ const AboutPage: React.FC = () => {
   return (
     <div className='px-6 pt-6 pb-10'>
       <h1 className="flex items-start justify-start text-2xl font-semibold text-black">#Me</h1>
-      <div className="flex flex-col lg:flex-row gap-6 md:gap-10">
-        <div className="flex-1 flex justify-center items-end">
+      <div className="flex flex-col gap-6 md:gap-10">
+        <div className="flex justify-center items-end">
           <Image
             src={`${basePath}/images/mugshot.png`}
             height={260}
@@ -22,7 +22,7 @@ const AboutPage: React.FC = () => {
           />
         </div>
 
-        <div className="flex-[2] flex flex-col justify-center text-black text-center lg:text-start">
+        <div className="flex flex-col justify-center items-center text-black text-center lg:w-3/4 lg:mx-auto">
           <h2 className="font-semibold text-4xl lg:text-5xl mb-4 sm:mb-6">
             Software Engineer
           </h2>
