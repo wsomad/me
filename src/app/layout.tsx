@@ -1,17 +1,21 @@
 import React, { ReactNode } from 'react';
 import Header from '@/components/header/header';
 import './globals.css';
+import Head from 'next/head';
 
 interface LayoutProps {
   children: ReactNode;
 }
 
 export const metadata = {
-  title: "Muhammad Haikal | Online Portfolio",
-  description: "Portfolio of Muhammad Haikal, a software engineer specializing in web development and mobile development.",
+  title: "Software Engineer Portfolio",
+  description: "Hello! I'm Haikal, a software engineer.",
   keywords: "Muhammad Haikal, software engineer, online portfolio",
-  authors: [{ name: "Muhammad Haikal" }],
+  authors: [{ name: "wsomad" }],
   robots: "index, follow",
+  icons: {
+    icon: `/images/available-face.png`
+  },
   other: {
     "google-site-verification": "dRZ0b2OXM3OA-M1RNZPld9UKmwRu50CBV6qELq1l2d0",
   },

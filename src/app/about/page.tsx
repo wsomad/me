@@ -27,10 +27,7 @@ const AboutPage: React.FC = () => {
             Software Engineer
           </h2>
           <p className='text-md text-black'>
-            Hello World! I&apos;m <span className="font-semibold">Haikal</span>, a Software Engineer.
-            I&apos;m currently undergoing my internship as a Technology Intern at Deloitte.
-            It&apos;s not an easy road but I believe there is still a long journey for me to go through.
-            So, let&apos;s sip a tea and enjoy the life.
+            Well, hello there! I&apos;m <span className="font-semibold">Haikal</span>, a Software Engineer. 
           </p>
         </div>
       </div>

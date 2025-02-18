@@ -5,6 +5,7 @@ export interface place {
 }
 
 export const experience: place[] = [
+    {name: "Deloitte", role: "Technology Analyst", duration: "2025 - Now"},
     {name: "Deloitte", role: "Technology Intern", duration: "2024 - 2025"},
 ]
 

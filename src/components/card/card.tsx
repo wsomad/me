@@ -7,17 +7,18 @@ interface CardProps {
   repo_url: string;
 }
 
-const CardComponents: React.FC<CardProps> = ({ name, repo_url }) => {
+const CardComponents: React.FC<CardProps> = ({ name, repo_url}) => {
     const basePath = process.env.NODE_ENV === 'production' ? '/me' : '';
 
     return (
-        <Card className="min-w-[280px] min-h-[280px]">
+        <Card className="min-w-[200px] min-h-[280px] sm:min-w-[280px] md:min-h-[280px]">
             <div className="flex justify-center items-center pt-4"> 
                 <Image
                     src={`${basePath}/images/available-face.png`}
                     alt="Default avatar"
-                    width={132} 
-                    height={132}
+                    width={130} 
+                    height={100}
+                    layout="intrinsic"
                 />
             </div>
             <div className="pt-6 pb-2 px-6">
