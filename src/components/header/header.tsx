@@ -1,9 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
-import Image from "next/image";
 
 const Header: React.FC = () => {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
   return (
     <div className="border-b border-gray-100">
         <header className="max-w-5xl mx-auto flex items-end justify-end space-x-8 py-5 font-courier font-normal border-l border-r border-gray-100 px-6">   
