@@ -12,8 +12,8 @@ const Stack: React.FC = () => {
                 <Image
                     src={stack.imageUrl} 
                     alt={`${stack.name} logo`}
-                    width={52}
-                    height={52}
+                    width={48}
+                    height={48}
                     className="object-contain"
                     priority
                 />

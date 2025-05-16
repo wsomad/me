@@ -5,14 +5,8 @@ const Header: React.FC = () => {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   return (
-    <div className="border-b border-gray-300">
-        <header className="max-w-7xl mx-auto flex items-center justify-between space-x-8 py-5 font-courier font-normal border-l border-r border-gray-300 px-6">   
-          <Image
-            src={`${basePath}/images/available-face.png`} // Local image path
-            alt="Available face"
-            width={25} 
-            height={25}
-          />
+    <div className="border-b border-gray-100">
+        <header className="max-w-5xl mx-auto flex items-end justify-end space-x-8 py-5 font-courier font-normal border-l border-r border-gray-100 px-6">   
           <nav className="flex items-center space-x-4">
             <a
               href="https://github.com/wsomad"

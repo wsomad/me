@@ -1,36 +1,40 @@
 import { Button } from "../ui/button";
 import { Card, CardTitle } from "../ui/card";
-import Image from "next/image"; // Import the Image component from Next.js
+import Image from "next/image";
 
 interface CardProps {
   name: string;
   repo_url: string;
+  imagePath: string;
 }
 
-const CardComponents: React.FC<CardProps> = ({ name, repo_url}) => {
+const CardComponents: React.FC<CardProps> = ({ name, repo_url, imagePath}) => {
     const basePath = process.env.NODE_ENV === 'production' ? '/me' : '';
 
     return (
-        <Card className="min-w-[280px] min-h-[280px]">
-            <div className="flex justify-center items-center pt-4"> 
+        <Card className="w-full min-h-[250px] flex flex-col justify-between">
+            <div></div>
+            <div className="flex justify-center items-center pt-12"> 
                 <Image
-                    src={`${basePath}/images/available-face.png`}
+                    src={imagePath || `${basePath}/images/available-face.png`}
                     alt="Default avatar"
-                    width={130} 
-                    height={130}
+                    width={150} 
+                    height={50}
                     layout="intrinsic"
                 />
             </div>
-            <div className="pt-6 pb-2 px-6">
-                <CardTitle className="text-md font-medium">{name}</CardTitle>
-            </div>
-            <div className="px-6">
-                <Button
-                className="p-4 w-full"
-                onClick={() => window.open(`${repo_url}`, "_blank")}
-                >
-                GitHub Repository
-                </Button>
+            <div className="py-4 px-4 flex flex-col">
+                <div className="pb-4">
+                    <CardTitle className="text-md font-medium">{name}</CardTitle>
+                </div>
+                <div>
+                    <Button
+                    className="p-4 w-full"
+                    onClick={() => window.open(`${repo_url}`, "_blank")}
+                    >
+                    Repository
+                    </Button>
+                </div>
             </div>
         </Card>
     );

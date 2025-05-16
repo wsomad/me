@@ -7,14 +7,11 @@ interface LayoutProps {
 }
 
 export const metadata = {
-  title: "Software Engineer Portfolio",
-  description: "Hello! I'm Haikal, a software engineer.",
-  keywords: "Muhammad Haikal, software engineer, online portfolio",
+  title: "Muhammad Haikal",
+  description: "Hello! I'm Haikal.",
+  keywords: "Muhammad Haikal, Software Engineer, Web Developer, Mobile App Developer, Portfolio, Deloitte",
   authors: [{ name: "wsomad" }],
   robots: "index, follow",
-  icons: {
-    icon: `/images/available-face.png`
-  },
   other: {
     "google-site-verification": "dRZ0b2OXM3OA-M1RNZPld9UKmwRu50CBV6qELq1l2d0",
   },

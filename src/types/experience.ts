@@ -1,16 +1,13 @@
+const basePath = process.env.NODE_ENV === 'production' ? '/me' : '';
+
 export interface place {
     name: string;
     duration: string;
-    role: string,
+    role: string;
+    imagePath: string
 }
 
 export const experience: place[] = [
-    {name: "Deloitte", role: "Technology Analyst", duration: "2025 - Now"},
-    {name: "Deloitte", role: "Technology Intern", duration: "2024 - 2025"},
-]
-
-export const education: place[] = [
-    {name: "Universiti Teknologi MARA", role: "Computer Science's Student", duration: "2021 - 2025"},
-    {name: "Kolej Matrikulasi Perak", role: "Physical Science's Student", duration: "2020 - 2021"},
-    {name: "SMK Tambun", role: "Accounting Science's Student", duration: "2018 - 2019"},
+    {name: "DC Technology Solutions Sdn. Bhd.", role: "Technology Analyst", duration: "Mac 2025 - Now", imagePath: `${basePath}/images/deloitte-logo.png`},
+    {name: "DC Technology Solutions Sdn. Bhd.", role: "Technology Intern", duration: "Sept 2024 - Jan 2025", imagePath: `${basePath}/images/deloitte-logo.png`},
 ]
