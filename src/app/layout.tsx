@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
-import Header from '@/components/header/header';
-import './globals.css';
+import '@/style/globals.css';
+import Header from '@/components/layout/header/Header';
+import Footer from '@/components/layout/footer/Footer';
 
 interface LayoutProps {
   children: ReactNode;
@@ -9,11 +10,11 @@ interface LayoutProps {
 export const metadata = {
   title: "Muhammad Haikal",
   description: "Hello! I'm Haikal.",
-  keywords: "Muhammad Haikal, Software Engineer, Web Developer, Mobile App Developer, Portfolio, Deloitte",
+  keywords: "Muhammad Haikal, Software Engineer, Web Developer, Mobile App Developer, Portfolio",
   authors: [{ name: "wsomad" }],
   robots: "index, follow",
   other: {
-    "google-site-verification": "dRZ0b2OXM3OA-M1RNZPld9UKmwRu50CBV6qELq1l2d0",
+    "google-site-verification": process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
 };
 
@@ -23,6 +24,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <body>
         <Header></Header>
         <main>{children}</main>
+        <Footer></Footer>
       </body>
     </html>
   );

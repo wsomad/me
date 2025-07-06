@@ -1,5 +1,5 @@
-import { Button } from "../ui/button";
-import { Card, CardTitle } from "../ui/card";
+import { Button } from "../../../ui/button";
+import { Card, CardTitle } from "../../../ui/card";
 import Image from "next/image";
 
 interface CardProps {
@@ -8,11 +8,11 @@ interface CardProps {
   imagePath: string;
 }
 
-const CardComponents: React.FC<CardProps> = ({ name, repo_url, imagePath}) => {
+const CardProject: React.FC<CardProps> = ({ name, repo_url, imagePath}) => {
     const basePath = process.env.NODE_ENV === 'production' ? '/me' : '';
 
     return (
-        <Card className="w-full min-h-[250px] flex flex-col justify-between">
+        <Card className="w-full min-h-[300px] flex flex-col justify-between rounded-lg">
             <div></div>
             <div className="flex justify-center items-center pt-12"> 
                 <Image
@@ -20,7 +20,6 @@ const CardComponents: React.FC<CardProps> = ({ name, repo_url, imagePath}) => {
                     alt="Default avatar"
                     width={150} 
                     height={50}
-                    layout="intrinsic"
                 />
             </div>
             <div className="py-4 px-4 flex flex-col">
@@ -29,7 +28,7 @@ const CardComponents: React.FC<CardProps> = ({ name, repo_url, imagePath}) => {
                 </div>
                 <div>
                     <Button
-                    className="p-4 w-full"
+                    className="p-4 w-full rounded-md bg-blue-600 hover:bg-gray-200"
                     onClick={() => window.open(`${repo_url}`, "_blank")}
                     >
                     Repository
@@ -40,4 +39,4 @@ const CardComponents: React.FC<CardProps> = ({ name, repo_url, imagePath}) => {
     );
 };
 
-export default CardComponents;
+export default CardProject;

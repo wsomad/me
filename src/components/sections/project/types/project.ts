@@ -6,8 +6,7 @@ export interface projectType {
 }
 
 export const projectList: projectType[] = [
-    {name: "json-tool", imagePath: `${basePath}/images/-logo.png`},
     {name: "openlearnhub", imagePath: `${basePath}/images/openlearnhub.png`},
-    {name: "sewa", imagePath: `${basePath}/images/-logo.png`},
-    {name: "unifit", imagePath: `${basePath}/images/-logo.png`},
+    {name: "sewa", imagePath: `${basePath}/images/code.png`},
+    {name: "unifit", imagePath: `${basePath}/images/code.png`},
 ]

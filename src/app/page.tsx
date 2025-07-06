@@ -1,50 +1,29 @@
 import React from 'react';
-// import Index from './first/page';
-import About from './about/page';
-import Project from './project/page';
-import Skills from './skills/page';
-import Contact from './contact/page';
-import Experience from './experience/page';
+import About from '../components/sections/about/AboutIndex';
+import Project from '../components/sections/project/ProjectIndex';
+import Stacks from '../components/sections/stack/StackIndex';
+import Experience from '../components/sections/experience/ExperienceIndex';
+import Section from '../app/section';
 
 const HomePage: React.FC = () => {
   return (
-    <div>
-      <div className='border-b border-gray-100'>
-        <div className="max-w-6xl mx-auto border-l border-r border-gray-100">
-          <section className="min-h-54">
-            <About />
-          </section>
-        </div>
-      </div>
-      <div className='border-b border-gray-100'>
-        <div className="max-w-6xl mx-auto border-l border-r border-gray-100">
-          <section className="min-h-32">
-            <Experience />
-          </section>
-        </div>
-      </div>
-      <div className='border-b border-gray-100'>
-        <div className="max-w-6xl mx-auto border-l border-r border-gray-100">
-          <section className="min-h-96">
-            <Project />
-          </section>
-        </div>
-      </div>
-      <div className='border-b border-gray-100'>
-        <div className="max-w-6xl mx-auto border-l border-r border-gray-100">
-          <section className="min-h-96">
-            <Skills />
-          </section>
-        </div>
-      </div>
-      <div className=''>
-        <div className="max-w-5xl mx-auto border-l border-r border-gray-100">
-          <section className="min-h-32">
-            <Contact />
-          </section>
-        </div>
-      </div>
-    </div>
+    <main className="flex flex-col">
+      <Section>
+        <About />
+      </Section>
+
+      <Section className="mt-10">
+        <Experience />
+      </Section>
+
+      <Section className="mt-10">
+        <Project />
+      </Section>
+
+      <Section className="mt-10">
+        <Stacks />
+      </Section>
+    </main>
   );
 };
 
