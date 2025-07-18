@@ -10,7 +10,7 @@ interface Repo {
 }
 
 const Project: React.FC = () => {
-    const github_url = process.env.NEXT_PUBLIC_GITHUB_API_URL || ' ';
+    const github_url = process.env.NEXT_PUBLIC_GITHUB_API_URL || 'https://api.github.com/users/haikalsamari/repos';
     const [repos, setRepos] = useState<Repo[]>([]);
     const [, setLoading] = useState(true);
 
