@@ -9,8 +9,6 @@ interface CardExperienceProps {
 }
 
 const CardExperience: React.FC<CardExperienceProps> = ({ companyName, position, duration, imagePath}) => {
-    // const basePath = process.env.NODE_ENV === 'production' ? '/me' : '';
-
     return (
         <Card className="w-full min-h-[300px] flex flex-col justify-between rounded-lg">
             <div></div>
