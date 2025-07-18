@@ -9,22 +9,20 @@ interface CardProps {
 }
 
 const CardProject: React.FC<CardProps> = ({ name, repo_url, imagePath}) => {
-    const basePath = process.env.NODE_ENV === 'production' ? '/me' : '';
 
     return (
-        <Card className="w-full min-h-[300px] flex flex-col justify-between rounded-lg">
-            <div></div>
+        <Card className="w-full min-h-[260px] md:min-h-[280px] lg:min-h-[300px] flex flex-col justify-between rounded-md">
             <div className="flex justify-center items-center pt-12"> 
                 <Image
-                    src={imagePath || `${basePath}/images/available-face.png`}
+                    src={imagePath || `/images/available-face.png`}
                     alt="Default avatar"
-                    width={150} 
+                    width={130} 
                     height={50}
                 />
             </div>
             <div className="py-4 px-4 flex flex-col">
                 <div className="pb-4">
-                    <CardTitle className="text-md font-medium">{name}</CardTitle>
+                    <CardTitle className="text-md font-semibold">{name}</CardTitle>
                 </div>
                 <div>
                     <Button

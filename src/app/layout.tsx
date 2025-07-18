@@ -2,6 +2,13 @@ import React, { ReactNode } from 'react';
 import '@/style/globals.css';
 import Header from '@/components/layout/header/Header';
 import Footer from '@/components/layout/footer/Footer';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+});
+
 
 interface LayoutProps {
   children: ReactNode;
@@ -20,7 +27,7 @@ export const metadata = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <body>
         <Header></Header>
         <main>{children}</main>

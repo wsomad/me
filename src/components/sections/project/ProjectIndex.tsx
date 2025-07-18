@@ -3,8 +3,8 @@ import Project from '@/components/sections/project/components/Project';
 
 const ProjectIndex: React.FC = () => {
   return (
-    <div className='px-6 xl:pl-0'>
-      <h1 className="flex items-start justify-start text-3xl sm:text-4xl font-semibold text-black">Projects</h1>
+    <div className='px-4'>
+      <h1 className="flex items-start justify-start text-xl sm:text-2xl font-bold text-black">Projects</h1>
       <Project></Project>
     </div>
   );

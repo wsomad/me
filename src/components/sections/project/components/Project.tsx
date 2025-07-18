@@ -10,7 +10,7 @@ interface Repo {
 }
 
 const Project: React.FC = () => {
-    const github_url = process.env.NEXT_PUBLIC_GITHUB_API_URL || 'https://api.github.com/users/wsomad/repos';
+    const github_url = process.env.NEXT_PUBLIC_GITHUB_API_URL || ' ';
     const [repos, setRepos] = useState<Repo[]>([]);
     const [, setLoading] = useState(true);
 
@@ -18,13 +18,13 @@ const Project: React.FC = () => {
         const fetchRepos = async () => {
             try {
                 const response = await fetch(github_url);
-                if (!response.ok) throw new Error('Network response was not ok');
+                if (!response.ok) throw new Error('Response takde!');
+
                 const data = await response.json();
-                const excludeRepos = ['me'];
-                const filteredRepos = data.filter((repo: Repo) => !excludeRepos.includes(repo.name));
-                setRepos(filteredRepos);
+
+                setRepos(data);
             } catch (error) {
-                console.error('Error fetching repos:', error);
+                console.error('Tak dapat nak fetch repos:', error);
             } finally {
                 setLoading(false);
             }
@@ -34,7 +34,7 @@ const Project: React.FC = () => {
     }, [github_url]);
 
     const renderedRepos = repos.map((repo) => {
-        const matchedName = projectList.find(i => i.name === repo.name);
+        const matchedName = projectList.find(project => project.name === repo.name);
         if (matchedName) {
             return <CardComponents key={repo.id} name={repo.name} repo_url={repo.html_url} imagePath={matchedName.imagePath}/>;
         }
@@ -42,8 +42,7 @@ const Project: React.FC = () => {
     });
 
     return (
-        // <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-6 justify-center sm:justify-center sm:place-items-center mt-6">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 lg:gap-6 mt-6">    
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-4">    
             {renderedRepos}
         </div>
     );

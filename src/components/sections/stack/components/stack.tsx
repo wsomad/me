@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Stack: React.FC = () => {
     return (
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 py-6">
+        <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-7 py-6">
             {stacks.map((stack, index) => (
                 <div
                     key={index}
@@ -17,7 +17,7 @@ const Stack: React.FC = () => {
                         className="object-contain"
                         priority
                     />
-                    <p className="mt-4 text-center text-md font-medium">{stack.name}</p>
+                    <p className="mt-4 text-center text-md font-semibold">{stack.name}</p>
                 </div>
             ))}
             </div>

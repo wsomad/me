@@ -12,15 +12,15 @@ const HomePage: React.FC = () => {
         <About />
       </Section>
 
-      <Section className="mt-10">
+      <Section className="mt-20">
         <Experience />
       </Section>
 
-      <Section className="mt-10">
+      <Section className="mt-20">
         <Project />
       </Section>
 
-      <Section className="mt-10">
+      <Section className="mt-20">
         <Stacks />
       </Section>
     </main>
